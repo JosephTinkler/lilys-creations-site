@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #e9bdc5;;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%; 
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+#root {
+  width: 100%; /* Or a specific width if needed */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex; /* Often useful for layout within #root */
+  flex-direction: column; /* Often useful for layout within #root */
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+h1 {  
+  color: #3e611f;
+  /* font-family: 'Poppins', sans-serif; */
+}
+h2 {
+  color: #3e611f;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+body {
+  font-family: 'Poppins', sans-serif; /* Sets Poppins as the default font */
+}
+
+/* You can also apply specific styles for different elements if needed */
+h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; /* Optional: Apply Poppins to headers */
+}
+
+@keyframes bounceUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+}
+
+.bounce-animation {
+  animation: bounceUpDown 2s ease-in-out infinite;
+}
+.image-shadow {
+  filter: drop-shadow(4px 3px 4px rgba(0, 0, 0, 0.25)); 
+}
+
+.button {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 33px;
+  padding: 20px 40px;
+  color: black;
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.button:hover {
+  border-color: black;
+}
