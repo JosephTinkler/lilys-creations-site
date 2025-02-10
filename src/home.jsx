@@ -4,7 +4,7 @@ import './index.css';
 import lilyPhoto from '/images/lily_logo.png';
 import frogNoBg from '/images/Lily-frog-nobg.png';
 import frogMain from '/images/Lily-frog-main.png';
-
+import mainimg from '/images/mainimg.png';
 
 
 const Home = () => {
@@ -31,7 +31,7 @@ const Home = () => {
 Sollicitudin ultrices eget libero sagittis orci dictumst mattis. Sollicitudin fringilla urna sapien ultricies at bibendum diam nascetur. Varius erat enim eros malesuada ipsum vivamus, etiam parturient. Per metus maximus at ad magnis diam egestas inceptos. Class gravida suspendisse vehicula pretium praesent lacus libero varius sit. Posuere convallis sollicitudin integer montes cras felis. Felis primis sociosqu nulla purus cursus? Tincidunt ultrices lectus magnis himenaeos diam vestibulum senectus lacinia. Malesuada dignissim facilisis porta bibendum quam faucibus tortor luctus.</p>
                 </div>
                 <div id="image-div" className="w-1/2">
-                    <img src={frogMain} alt="Lily's Creations Logo" className="w-full h-full object-cover rounded-3xl" />
+                    <img src={mainimg} alt="Lily's Creations Logo" className="w-full h-full object-cover rounded-3xl" />
                 </div>
             </div>  
         </div>
