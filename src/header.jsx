@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css'; // Import your CSS file
+import './header.css'; // Import your CSS file
 import lilyLogo from '/images/lily_logo.png'; // Import your logo image
 import { useLocation } from "react-router-dom";
 
