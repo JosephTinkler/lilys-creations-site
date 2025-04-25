@@ -10,7 +10,7 @@ import mainimg from '/images/mainimg.png';
 const Home = () => {
     const scrollToSection = () => {
         window.scrollTo({
-          top: 700, // Adjust this value to the position you want to scroll to
+          top: 900, // Adjust this value to the position you want to scroll to
           behavior: 'smooth', // Smooth scroll
         });
       };
@@ -20,7 +20,7 @@ const Home = () => {
             <div className="flex flex-col items-center justify-center mt-32 mb-64">
                 <img src={frogNoBg} className="bounce-animation image-shadow" alt="Lily Photo" style={{ width: "150px", height: "auto" }}/>
                 <h1 className="mt-3">Lily's Modelmaking</h1>
-                <button onClick={scrollToSection} className="button mt-16 mb-16">Read More</button>
+                <button onClick={scrollToSection} className="button mt-16 mb-32">Read More</button>
             </div>
             <div id="about-div" className="mx-12 mt-5 flex">
                 <div id="about-text" className="w-1/2">
