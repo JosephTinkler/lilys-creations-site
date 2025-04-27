@@ -26,10 +26,13 @@ const Home = () => {
                 <div id="about-text" className="w-1/2">
                     <h1 className='mb-2'>Hello, my name is Lily Beer</h1>
                     <h2 className='text-black mb-4'>I am currently studying BA(Hons) Modelmaking at Arts University Bournemouth.</h2>
-                    <p className='text-black pr-2'>I am a passionate maker dedicated to craftsmanship, sustainability, and engaging design. My work focuses on fostering connections—whether through nature, education, or art. I studied BA (Hons) Modelmaking at Arts University Bournemouth, where I developed my skills in creating high-quality, detailed models for educational and interactive experiences.
+                    <p className='text-black pr-2'>
+                    I'm a passionate maker who believes in craftsmanship, sustainability, and engaging design. I studied BA (Hons) Modelmaking at Arts University Bournemouth, where I honed my skills in creating a range of high-quality models that connect people to nature, education, and art.
 
-My values centre around fostering a connection to nature and art. I have always had a passion for animals and have pursued this interest through studies in Animal Management and Dog Grooming at Merrist Wood College. I am particularly drawn to creating meaningful, interactive experiences that inspire and educate others. I have created interactive, educational models for organizations like Dorset Heath Partnership and Blackpool Zoo, to inspire learning and engagement.
-I value traditional craftsmanship and embrace how artisanal processes create lasting connections with objects. Objects crafted with skill and care fulfill our innate desire for unique, human-centered design, in contrast to mass-produced, low-quality items. I embrace this by upcycling old items, shopping at charity shops, and challenging myself to create rather than buy whenever possible. I value the ‘reduce, reuse, recycle’ approach, which not only benefits the environment but also saves money.</p>
+I've created educational models for organisations like Dorset Heath Partnership and Blackpool Zoo, designed to spark curiosity, build connection, and support conservation efforts.
+
+I believe in the value of traditional craftsmanship and well-made objects. I'm always looking for ways to upcycle, buy second-hand, and make rather than buy.
+                    </p>
                 </div>
                 <div id="image-div" className="w-1/2">
                     <img src={mainimg} alt="Lily's Creations Logo" className="w-full h-full object-cover rounded-3xl" />
