@@ -48,10 +48,14 @@
   .about-text {
     width: 100% !important;
     padding-bottom: 1.5rem;
+    padding-right: 0px !important;
   }
   .image-div {
     width: 100% !important;
   }
+}
+.about-text {
+  padding-right: 0.5rem !important;
 }
 a {
   font-weight: 500;
@@ -71,7 +75,7 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.1em;
   line-height: 1.1;
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;

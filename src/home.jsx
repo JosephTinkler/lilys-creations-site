@@ -27,11 +27,11 @@ const Home = () => {
                     <h1 className='mb-2'>Hello, my name is Lily Beer</h1>
                     <h2 className='text-black mb-4'>I am currently studying BA(Hons) Modelmaking at Arts University Bournemouth.</h2>
                     <p className='text-black pr-2'>
-                    I'm a passionate maker who believes in craftsmanship, sustainability, and engaging design. I studied BA (Hons) Modelmaking at Arts University Bournemouth, where I honed my skills in creating a range of high-quality models that connect people to nature, education, and art.
+                    I'm a passionate maker who believes in craftsmanship, sustainability, and engaging design. I studied BA (Hons) Modelmaking at Arts University Bournemouth, where I honed my skills in creating a range of high-quality models that connect people to nature, education, and art. <br/>
 
-I've created educational models for organisations like Dorset Heath Partnership and Blackpool Zoo, designed to spark curiosity, build connection, and support conservation efforts.
+I've created educational models for organisations like Dorset Heath Partnership and Blackpool Zoo, designed to spark curiosity, build connection, and support conservation efforts.<br/>
 
-I believe in the value of traditional craftsmanship and well-made objects. I'm always looking for ways to upcycle, buy second-hand, and make rather than buy.
+I believe in the value of traditional craftsmanship and well-made objects. I'm always looking for ways to upcycle, buy second-hand, and make rather than buy.<br/>
                     </p>
                 </div>
                 <div id="image-div" className="image-div w-1/2">
