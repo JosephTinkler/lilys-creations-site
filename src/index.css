@@ -172,3 +172,12 @@ h2, h3, h4, h5, h6 {
 .bg-lily-pink-dark {
   background-color: #eb99a8;
 }
+.contact-text {
+  font-size: 2em;
+  line-height: 1.1;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #3e611f;
+  text-align: center;
+}

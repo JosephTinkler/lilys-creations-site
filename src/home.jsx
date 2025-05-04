@@ -37,7 +37,14 @@ I believe in the value of traditional craftsmanship and well-made objects. I'm a
                 <div id="image-div" className="image-div w-1/2">
                     <img src={mainimg} alt="Lily's Creations Logo" className="w-full h-full object-cover rounded-3xl" />
                 </div>
+               
             </div>  
+            <div className="mx-12 mt-10 flex flex-col align-center justify-center text-center gap-4"> <div className="text-black">
+                Check out my dissertation on "Restoring Connections: How Mass-production Has Eroded Our Bond with Everyday Objects and How We Can Rebuild It." 
+                </div>
+                <a href="/Dissertation.pdf" download className="flex justify-center align-center">
+      <button className="button">Download Dissertation</button>
+    </a></div>
         </div>
     );
 };

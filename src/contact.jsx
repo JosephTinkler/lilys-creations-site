@@ -15,7 +15,7 @@ const Contact = () => {
     return (
         <div className="mb-32">
             <Header />
-            <div id="contact-about" className="flex justify-center align-center"></div>
+            <div id="contact-about" className="contact-text flex justify-center align-center">Please feel free to contact me for any questions or enquiries.</div>
             <div id="contact-div" className="flex gap-2 justify-center align-center mt-32">
                <a className="flex justify-center align-center" target="_blank" href="https://www.instagram.com/lily.g.beer/">
                 <img src={instagram} />
