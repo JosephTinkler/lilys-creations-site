@@ -22,8 +22,8 @@ const Home = () => {
                 <h1 className="mt-3">Lily's Modelmaking</h1>
                 <button onClick={scrollToSection} className="button mt-16 mb-32">Read More</button>
             </div>
-            <div id="about-div" className="mx-12 mt-5 flex">
-                <div id="about-text" className="w-1/2">
+            <div id="about-div" className="about-div mx-12 mt-5 flex">
+                <div id="about-text" className="about-text w-1/2">
                     <h1 className='mb-2'>Hello, my name is Lily Beer</h1>
                     <h2 className='text-black mb-4'>I am currently studying BA(Hons) Modelmaking at Arts University Bournemouth.</h2>
                     <p className='text-black pr-2'>
@@ -34,7 +34,7 @@ I've created educational models for organisations like Dorset Heath Partnership 
 I believe in the value of traditional craftsmanship and well-made objects. I'm always looking for ways to upcycle, buy second-hand, and make rather than buy.
                     </p>
                 </div>
-                <div id="image-div" className="w-1/2">
+                <div id="image-div" className="image-div w-1/2">
                     <img src={mainimg} alt="Lily's Creations Logo" className="w-full h-full object-cover rounded-3xl" />
                 </div>
             </div>  
