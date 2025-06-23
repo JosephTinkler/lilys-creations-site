@@ -16,6 +16,7 @@ import butterfly1 from '/images/butterfly1.jpg?url';
 import animation1 from '/images/animation1.png?url';
 import cad1 from '/images/cad1.png?url';
 import tapir1 from '/images/tapir1.png?url';
+import tortoisecover from '/images/portfolio/tortoisecover.png?url';
 //popup images
 import tapir2 from '/images/portfolio/2.png?url'
 import tapir3 from '/images/portfolio/3.png?url'
@@ -40,32 +41,72 @@ import puppets3 from '/images/portfolio/21.png?url';
 import animation2 from '/images/portfolio/22.png?url';
 import architectural2 from '/images/portfolio/23.png?url';
 import cad2 from '/images/portfolio/24.png?url';
+import cad3 from '/images/portfolio/newcad1.png?url';
 import headsculpt2 from '/images/portfolio/25.png?url';
 import headsculpt3 from '/images/portfolio/26.png?url';
+import tortoise1 from '/images/portfolio/tortoise1.png?url';
+import tortoise2 from '/images/portfolio/tortoise2.png?url';
+import tortoise3 from '/images/portfolio/tortoise3.png?url';
+import tortoise4 from '/images/portfolio/tortoise4.png?url';
+import tortoise5 from '/images/portfolio/tortoise5.png?url';
+import tortoise6 from '/images/portfolio/tortoise6.png?url';
 
 
 const items = [
-    { id: 1, images: [tapir1,tapir2,tapir3,tapir4,tapir5], text: "Blackpool Zoo Tapir" },
-    { id: 2, images: [frog1,frog2,frog3,frog4], text: "African Bullfrog" },
-    { id: 3, images: [pangolin1,pangolin2,pangolin3], text: "Anatomical Pangolin" },
-    { id: 4, images: [headsculpt1,headsculpt2,headsculpt3], text: "Life Sized Head Sculpt" },
-    { id: 5, images: [maggie1,maggie2,maggie3,maggie4], text: "Maggie’s Hospice Centre" },
-    { id: 6, images: [lobster1,lobster2,lobster3], text: "Siren Lobster Feast" },
-    { id: 7, images: [fairy_bottle1,fairy_bottle2], text: "Tinkerbell Potion Bottle" },
-    { id: 8, images: [watch1,watch2,watch3], text: "Officine Panerai Watch" },
-    { id: 9, images: [cad1,cad2], text: "Computer Aided Design" },
-    { id: 10, images: [architectural1,architectural2], text: "Architectural Models" },
-    { id: 11, images: [puppets1,puppets2,puppets3], text: "Group Puppet Project" },
-    { id: 12, images: [butterfly1,butterfly2], text: "Hullabaloo Event" },
-    { id: 133, images: [animation1,animation2], text: "Animation Collaboration" },
+  { id: 1, images: [tortoisecover,tortoise1,tortoise2,tortoise3,tortoise4,tortoise5,tortoise6], text: "Tortoise and Hare", url:'uRXZcX3YC6Q' },
+    { id: 2, images: [tapir1,tapir2,tapir3,tapir4,tapir5], text: "Blackpool Zoo Tapir" },
+    { id: 3, images: [frog1,frog2,frog3,frog4], text: "African Bullfrog", audio:'/audio/frogaudio.mp3' },
+    { id: 4, images: [pangolin1,pangolin2,pangolin3], text: "Anatomical Pangolin" },
+    { id: 5, images: [headsculpt1,headsculpt2,headsculpt3], text: "Life Sized Head Sculpt" },
+    { id: 6, images: [maggie1,maggie2,maggie3,maggie4], text: "Maggie’s Hospice Centre" },
+    { id: 7, images: [lobster1,lobster2,lobster3], text: "Siren Lobster Feast" },
+    { id: 8, images: [fairy_bottle1,fairy_bottle2], text: "Tinkerbell Potion Bottle" },
+    { id: 9, images: [watch1,watch2,watch3], text: "Officine Panerai Watch" },
+    { id: 10, images: [cad1,cad2,cad3], text: "Computer Aided Design" },
+    { id: 11, images: [architectural1,architectural2], text: "Architectural Models" },
+    { id: 12, images: [puppets1,puppets2,puppets3], text: "Group Puppet Project", url:'Qe-HTjODA8Y' },
+    { id: 13, images: [butterfly1,butterfly2], text: "Hullabaloo Event" },
+    { id: 14, images: [animation1,animation2], text: "Animation Collaboration" },
   ];
-  
+  function YouTubeEmbed({videoId}) {
+    if (!videoId || videoId.trim() === '') {
+      return <p></p>; // fallback UI
+    }   
+    const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+    return (
+      <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+        {<iframe
+          src= {embedUrl}
+          title="YouTube video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          style={{
+            position: 'relative',
+            width: '560px',
+            height: '315px'
+          }}
+        /> 
+      
+        }
+      </div>
+    );
+  }
+  function AudioPlayer({path}) {
+    return (
+<audio controls>
+  <source src={path} type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+    );
+  }
   const Portfolio = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedImages, setSelectedImages] = useState([]);
-  
-    const openModal = (images) => {
-      setSelectedImages(images);
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const openModal = (item) => {
+      setSelectedItem(item);
       setIsOpen(true);
     };
   
@@ -83,7 +124,7 @@ const items = [
                   src={item.images[0]} // Show the first image as the thumbnail
                   alt={item.text}
                   className="w-full h-48 object-cover cursor-pointer"
-                  onClick={() => openModal(item.images)}
+                  onClick={() => openModal(item)}
                 />
                 <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold text-gray-800">{item.text}</h3>
@@ -94,7 +135,7 @@ const items = [
         </div>
   
         {/* Modal */}
-        {isOpen && (
+        {isOpen && selectedItem && (
           <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
             <div className="bg-white p-6 rounded-lg max-w-2xl w-full">
               <div className="flex justify-end">
@@ -107,15 +148,21 @@ const items = [
               </div>
   
               <div className="flex flex-col items-center space-y-6 mt-4 overflow-y-auto max-h-[80vh]">
-  {selectedImages.slice(1).map((img, index) => (
-    <img
-      key={index}
-      src={img}
-      alt={`Selected ${index}`}
-      className="rounded-lg max-w-full h-auto"
-    />
-  ))}
-</div>
+              {selectedItem?.images.slice(1).map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Selected ${index}`}
+                  className="rounded-lg max-w-full h-auto"
+                />
+              ))}
+              {selectedItem?.url ? (
+                <YouTubeEmbed videoId={selectedItem.url} />
+              ) : null}
+              {selectedItem?.audio ? (
+                <AudioPlayer path={selectedItem.audio} />
+              ) : null}
+                </div>
 
             </div>
           </div>
@@ -123,5 +170,6 @@ const items = [
       </div>
     );
   };
+  
   
   export default Portfolio;
