@@ -193,7 +193,7 @@ const items = [
 
               {/* Small image grid */}
               {selectedItem?.smallImages?.length > 0 && (
-                <div className="grid grid-cols-3 gap-3 w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full">
                   {selectedItem.smallImages.map((img, index) => (
                     <img
                       key={index}
