@@ -3,6 +3,8 @@ import { useState } from "react";
 import Header from './header';
 import './index.css'; 
 //cover images
+import StainedGlass6 from '/images/StainedGlass6.jpeg?url';
+import Ceramic2 from '/images/Ceramic2.jpeg?url';
 import frog1 from '/images/frog1.JPG?url';
 import pangolin1 from '/images/pangolin1.png?url';
 import maggie1 from '/images/maggie1.JPG?url';
@@ -18,6 +20,24 @@ import cad1 from '/images/cad1.png?url';
 import tapir1 from '/images/tapir1.png?url';
 import tortoisecover from '/images/portfolio/tortoisecover.png?url';
 //popup images
+import Ceramic1 from '/images/Ceramic1.jpeg?url';
+import Ceramic3 from '/images/Ceramic3.jpeg?url';
+import Ceramic4 from '/images/Ceramic4.jpeg?url';
+import Ceramic5 from '/images/Ceramic5.jpeg?url';
+import StainedGlass1 from '/images/StainedGlass1.jpeg?url';
+import StainedGlass2 from '/images/StainedGlass2.jpeg?url';
+import StainedGlass3 from '/images/StainedGlass3.jpeg?url';
+import StainedGlass4 from '/images/StainedGlass4.jpeg?url';
+import StainedGlass5 from '/images/StainedGlass5.jpeg?url';
+import StainedGlass7 from '/images/StainedGlass7.jpeg?url';
+import StainedGlass8 from '/images/StainedGlass8.jpeg?url';
+import StainedGlass9 from '/images/StainedGlass9.jpeg?url';
+import StainedGlass10 from '/images/StainedGlass10.jpeg?url';
+import StainedGlass11 from '/images/StainedGlass11.jpeg?url';
+import StainedGlass12 from '/images/StainedGlass12.jpeg?url';
+import StainedGlass13 from '/images/StainedGlass13.jpeg?url';
+import StainedGlass14 from '/images/StainedGlass14.jpeg?url';
+import StainedGlassLamp from '/images/StainedGlassLamp.png?url';
 import tapir2 from '/images/portfolio/2.png?url'
 import tapir3 from '/images/portfolio/3.png?url'
 import tapir4 from '/images/portfolio/4.png?url'
@@ -53,20 +73,34 @@ import tortoise6 from '/images/portfolio/tortoise6.png?url';
 
 
 const items = [
-  { id: 1, images: [tortoisecover,tortoise1,tortoise2,tortoise3,tortoise4,tortoise5,tortoise6], text: "Tortoise and Hare", url:'uRXZcX3YC6Q' },
-    { id: 2, images: [tapir1,tapir2,tapir3,tapir4,tapir5], text: "Blackpool Zoo Tapir" },
-    { id: 3, images: [frog1,frog2,frog3,frog4], text: "African Bullfrog", audio:'/audio/frogaudio.mp3' },
-    { id: 4, images: [pangolin1,pangolin2,pangolin3], text: "Anatomical Pangolin" },
-    { id: 5, images: [headsculpt1,headsculpt2,headsculpt3], text: "Life Sized Head Sculpt" },
-    { id: 6, images: [maggie1,maggie2,maggie3,maggie4], text: "Maggie’s Hospice Centre" },
-    { id: 7, images: [lobster1,lobster2,lobster3], text: "Siren Lobster Feast" },
-    { id: 8, images: [fairy_bottle1,fairy_bottle2], text: "Tinkerbell Potion Bottle" },
-    { id: 9, images: [watch1,watch2,watch3], text: "Officine Panerai Watch" },
-    { id: 10, images: [cad1,cad2,cad3], text: "Computer Aided Design" },
-    { id: 11, images: [architectural1,architectural2], text: "Architectural Models" },
-    { id: 12, images: [puppets1,puppets2,puppets3], text: "Group Puppet Project", url:'Qe-HTjODA8Y' },
-    { id: 13, images: [butterfly1,butterfly2], text: "Hullabaloo Event" },
-    { id: 14, images: [animation1,animation2], text: "Animation Collaboration" },
+    { id: 1, images: [StainedGlass6,StainedGlassLamp,
+    ], smallImages: [StainedGlass12,StainedGlass14,
+    StainedGlass10,
+    ,
+    StainedGlass8,
+        StainedGlass5,
+
+    StainedGlass9,
+    StainedGlass11,
+    
+    StainedGlass7,StainedGlass1,StainedGlass2,
+    StainedGlass3,
+    StainedGlass4], text: "Stained Glass" },
+    { id: 2, images: [Ceramic2],smallImages : [Ceramic2,Ceramic3,Ceramic4,Ceramic1,Ceramic5], text: "Ceramic Creations" },
+    { id: 3, images: [tortoisecover,tortoise1,tortoise2,tortoise3,tortoise4,tortoise5,tortoise6], text: "Tortoise and Hare", url:'uRXZcX3YC6Q' },
+    { id: 4, images: [tapir1,tapir2,tapir3,tapir4,tapir5], text: "Blackpool Zoo Tapir" },
+    { id: 5, images: [frog1,frog2,frog3,frog4], text: "African Bullfrog", audio:'/audio/frogaudio.mp3' },
+    { id: 6, images: [pangolin1,pangolin2,pangolin3], text: "Anatomical Pangolin" },
+    { id: 7, images: [headsculpt1,headsculpt2,headsculpt3], text: "Life Sized Head Sculpt" },
+    { id: 8, images: [maggie1,maggie2,maggie3,maggie4], text: "Maggie’s Hospice Centre" },
+    { id: 9, images: [lobster1,lobster2,lobster3], text: "Siren Lobster Feast" },
+    { id: 10, images: [fairy_bottle1,fairy_bottle2], text: "Tinkerbell Potion Bottle" },
+    { id: 11, images: [watch1,watch2,watch3], text: "Officine Panerai Watch" },
+    { id: 12, images: [cad1,cad2,cad3], text: "Computer Aided Design" },
+    { id: 13, images: [architectural1,architectural2], text: "Architectural Models" },
+    { id: 14, images: [puppets1,puppets2,puppets3], text: "Group Puppet Project", url:'Qe-HTjODA8Y' },
+    { id: 15, images: [butterfly1,butterfly2], text: "Hullabaloo Event" },
+    { id: 16, images: [animation1,animation2], text: "Animation Collaboration" },
   ];
   function YouTubeEmbed({videoId}) {
     if (!videoId || videoId.trim() === '') {
@@ -156,6 +190,20 @@ const items = [
                   className="rounded-lg max-w-full h-auto"
                 />
               ))}
+
+              {/* Small image grid */}
+              {selectedItem?.smallImages?.length > 0 && (
+                <div className="grid grid-cols-3 gap-3 w-full">
+                  {selectedItem.smallImages.map((img, index) => (
+                    <img
+                      key={index}
+                      src={img}
+                      alt={`Small ${index}`}
+                      className="max-w-full max-h-full object-contain rounded-lg"
+                    />
+                  ))}
+                </div>
+              )}
               {selectedItem?.url ? (
                 <YouTubeEmbed videoId={selectedItem.url} />
               ) : null}

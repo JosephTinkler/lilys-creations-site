@@ -25,9 +25,11 @@ const Home = () => {
             <div id="about-div" className="about-div mx-12 mt-5 flex">
                 <div id="about-text" className="about-text w-1/2">
                     <h1 className='mb-2'>Hello, my name is Lily Beer</h1>
-                    <h2 className='text-black mb-4'>I am currently studying BA(Hons) Modelmaking at Arts University Bournemouth.</h2>
+                    <h2 className='text-black mb-4'>I am a modelmaker with a first class degree in Modelmaking from Arts University Bournemouth.</h2>
                     <p className='text-black pr-2'>
-                    I'm a passionate maker who believes in craftsmanship, sustainability, and engaging design. I studied BA (Hons) Modelmaking at Arts University Bournemouth, where I honed my skills in creating a range of high-quality models that connect people to nature, education, and art. <br/>
+                    I'm a passionate maker who believes in craftsmanship, sustainability, and engaging design. I currently work as a freelancer in the film industry.<br/>
+                    
+                     I studied BA (Hons) Modelmaking at Arts University Bournemouth, where I honed my skills in creating a range of high-quality models that connect people to nature, education, and art. <br/>
 
 I've created educational models for organisations like Dorset Heath Partnership and Blackpool Zoo, designed to spark curiosity, build connection, and support conservation efforts.<br/>
 
