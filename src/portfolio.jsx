@@ -157,7 +157,7 @@ const items = [
                 <img
                   src={item.images[0]} // Show the first image as the thumbnail
                   alt={item.text}
-                  className="w-full h-48 object-cover cursor-pointer"
+                  className="w-full h-60 object-cover cursor-pointer"
                   onClick={() => openModal(item)}
                 />
                 <div className="p-4 text-center">
