@@ -37,6 +37,9 @@ import StainedGlass11 from '/images/StainedGlass11.jpeg?url';
 import StainedGlass12 from '/images/StainedGlass12.jpeg?url';
 import StainedGlass13 from '/images/StainedGlass13.jpeg?url';
 import StainedGlass14 from '/images/StainedGlass14.jpeg?url';
+import StainedGlass16 from '/images/StainedGlass16.jpeg?url';
+import StainedGlass17 from '/images/StainedGlass17.jpeg?url';
+
 import StainedGlassLamp from '/images/StainedGlassLamp.png?url';
 import tapir2 from '/images/portfolio/2.png?url'
 import tapir3 from '/images/portfolio/3.png?url'
@@ -76,8 +79,8 @@ const items = [
     { id: 1, images: [StainedGlass6,StainedGlassLamp,
     ], smallImages: [StainedGlass12,StainedGlass14,
     StainedGlass10,
-    ,
-    StainedGlass8,
+    ,StainedGlass16,
+    StainedGlass8,StainedGlass17,
         StainedGlass5,
 
     StainedGlass9,
