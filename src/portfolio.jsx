@@ -39,7 +39,8 @@ import StainedGlass13 from '/images/StainedGlass13.jpeg?url';
 import StainedGlass14 from '/images/StainedGlass14.jpeg?url';
 import StainedGlass16 from '/images/StainedGlass16.jpeg?url';
 import StainedGlass17 from '/images/StainedGlass17.jpeg?url';
-
+import StainedGlass18 from '/images/StainedGlass18.jpeg?url';
+import StainedGlass19 from '/images/StainedGlass19.jpeg?url';
 import StainedGlassLamp from '/images/StainedGlassLamp.png?url';
 import tapir2 from '/images/portfolio/2.png?url'
 import tapir3 from '/images/portfolio/3.png?url'
@@ -86,7 +87,7 @@ const items = [
     StainedGlass9,
     StainedGlass11,
     
-    StainedGlass7,StainedGlass1,StainedGlass2,
+    StainedGlass18, StainedGlass19,StainedGlass1,StainedGlass2,
     StainedGlass3,
     StainedGlass4], text: "Stained Glass" },
     { id: 2, images: [Ceramic2],smallImages : [Ceramic2,Ceramic3,Ceramic4,Ceramic1,Ceramic5], text: "Ceramic Creations" },
